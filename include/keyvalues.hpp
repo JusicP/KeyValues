@@ -175,7 +175,7 @@ namespace KV
 		KeyValues *parentKV = nullptr;
 		size_t depth = 0;		
 
-		std::multimap< std::string, std::unique_ptr< KeyValues >, kvCompare > keyvalues;
+		std::multimap< std::string, std::unique_ptr< KeyValues > > keyvalues;
 	};
 
 	class ParseException : public std::exception
